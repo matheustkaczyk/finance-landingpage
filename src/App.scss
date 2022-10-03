@@ -6,6 +6,10 @@ body {
   overflow: hidden;
 }
 
+.open-menu {
+  transform: translateX(0);
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -27,6 +31,52 @@ header {
     img:hover {
       transform: scale(1.3);
       transition: 0.2s ease-in-out;
+    }
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: 100vh;
+    background-color: $darkmode;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out;
+    opacity: 0.9;
+
+    h1 {
+      font-size: xx-large;
+      color: black;
+      margin-bottom: 2rem;
+      background-color: antiquewhite;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+
+      li {
+        margin: 1rem;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+      }
+
+      li:hover {
+        transform: scale(1.3);
+        transition: 0.2s ease-in-out;
+      }
     }
   }
 }

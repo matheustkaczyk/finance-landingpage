@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 import twitter from '../../assets/twitter-icon.svg';
 import facebook from '../../assets/facebook-icon.svg';
 import medium from '../../assets/medium-icon.svg';
@@ -5,6 +7,22 @@ import logo from '../../assets/logo-icon.svg';
 import hamburger from '../../assets/hamburger-icon.svg';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  useEffect(() => {
+    const nav = document.querySelector('nav');
+    if (isMenuOpen) {
+      nav.classList.add('open-menu');
+    } else {
+      nav.classList.remove('open-menu');
+
+    }
+  }, [isMenuOpen]);
+
   return (
     <header>
       <div>
@@ -13,7 +31,21 @@ const Header = () => {
         <img src={medium} alt="medium logo" />
       </div>
       <img src={logo} alt="Finance logo" />
-      <img src={hamburger} alt="hamburger menu" />
+      <img src={hamburger} alt="hamburger menu" onClick={() => handleMenu()} />
+      <nav>
+        <ul>
+          <h1 onClick={() => handleMenu()}>X</h1>
+          <li>
+            Home
+          </li>
+          <li>
+            About
+          </li>
+          <li>
+            Contact
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
