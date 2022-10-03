@@ -84,6 +84,7 @@ header {
 .hero {
   width: 100vw;
   height: 90vh;
+  max-height: 90vh;
 
   .background-dark {
     position: absolute;
@@ -106,6 +107,7 @@ header {
     justify-content: space-around;
     align-items: center;
     color: white;
+    height: 100%;
 
     .hero-infos {
       display: flex;
@@ -168,12 +170,9 @@ header {
   }
 
   .hero-arrow-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 8vh;
-    margin-bottom: 5rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
     color: $btnColor;
     cursor: pointer;
     animation: bounce 2s infinite;
