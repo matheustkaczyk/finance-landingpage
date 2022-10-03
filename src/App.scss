@@ -3,6 +3,7 @@ $btnColor: #27AE60;
 
 body {
   background-color: $darkmode;
+  overflow: hidden;
 }
 
 header {
@@ -24,6 +25,22 @@ header {
 .hero {
   width: 100vw;
   height: 90vh;
+
+  .background-dark {
+    position: absolute;
+    left: 0;
+    top: 50;
+    width: 60%;
+    opacity: 0.1;
+    z-index: -999;
+  }
+
+  .background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+  }
 
   .hero-content {
     display: flex;
