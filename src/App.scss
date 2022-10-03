@@ -18,6 +18,10 @@ header {
   padding: 1rem;
   height: 10vh;
 
+  .logo {
+    cursor: pointer;
+  }
+
   div {
     display: flex;
     justify-content: space-around;
@@ -55,6 +59,7 @@ header {
       background-color: antiquewhite;
       padding: 1rem;
       border-radius: 5px;
+      cursor: pointer;
     }
 
     ul {
@@ -78,6 +83,10 @@ header {
         transition: 0.2s ease-in-out;
       }
     }
+  }
+
+  .hamburger {
+    cursor: pointer;
   }
 }
 

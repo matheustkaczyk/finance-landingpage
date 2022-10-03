@@ -30,8 +30,10 @@ const Header = () => {
         <img src={facebook} alt="facebook logo" />
         <img src={medium} alt="medium logo" />
       </div>
-      <img src={logo} alt="Finance logo" />
-      <img src={hamburger} alt="hamburger menu" onClick={() => handleMenu()} />
+      <a href="https://www.linkedin.com/in/matheustkaczykribeiro/" target={'_blank'}>
+        <img src={logo} alt="Finance logo" className='logo' />
+      </a>
+      <img src={hamburger} alt="hamburger menu" className='hamburger' onClick={() => handleMenu()} />
       <nav>
         <ul>
           <h1 onClick={() => handleMenu()}>X</h1>
