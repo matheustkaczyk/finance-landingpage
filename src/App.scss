@@ -26,9 +26,30 @@ header {
 
   .hero-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     color: white;
+
+    .hero-infos {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 30%;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        text-align: justify;
+      }
+
+    }
     
     .hero-image {
       width: 35%;

@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="hero">
       <Header />
       <div className="hero-content">
-        <div>
+        <div className="hero-infos">
           <h1>Mutual Investment</h1>
           <p>
             At Finance we care about your future. We help you invest the way you want. So you can relax, have fun and let your fund grow.
