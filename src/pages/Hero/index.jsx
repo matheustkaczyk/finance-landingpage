@@ -13,11 +13,13 @@ const Hero = () => {
             At Finance we care about your future. We help you invest the way you want. So you can relax, have fun and let your fund grow.
           </p>
           <button>Learn more</button>
-          <hr />
+          <div className="line-wrapper">
+            <hr />
+          </div>
         </div>
         <img src={heroImg} alt="Hero finance image" className="hero-image" />
       </div>
-        <img src={arrow} alt="arrow icon" />
+        <img src={arrow} alt="arrow icon" className="hero-arrow-icon" />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 $darkmode: #1D1D1D;
+$btnColor: #27AE60;
 
 body {
   background-color: $darkmode;
@@ -49,10 +50,45 @@ header {
         text-align: justify;
       }
 
+      button {
+        background-color: $btnColor;
+        color: white;
+        padding: 1rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        width: 10em;
+        cursor: pointer;
+      }
+    }
+
+    .line-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      hr {
+        width: 30%;
+        margin: 1rem 0;
+        border-color: $btnColor;
+      }
     }
     
     .hero-image {
-      width: 35%;
+      width: 40%;
+      height: 100%;
     }
+  }
+
+  .hero-arrow-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    margin-bottom: 5rem;
+    color: $btnColor;
   }
 }
