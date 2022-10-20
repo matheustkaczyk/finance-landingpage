@@ -27,7 +27,7 @@ header {
     justify-content: space-around;
     align-items: center;
     width: 10%;
-    
+
     img {
       cursor: pointer;
     }
@@ -170,7 +170,7 @@ header {
         border-color: $btnColor;
       }
     }
-    
+
     .hero-image {
       width: 40%;
       height: 100%;
@@ -217,9 +217,11 @@ header {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -259,6 +261,42 @@ header {
         width: 60%;
         margin-bottom: 2rem;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  header {
+    width: 100vw;
+    height: fit-content;
+
+    div {
+      width: 20%;
+    }
+
+    .logo {
+      width: 5em;
+    }
+
+    .hamburger {
+      width: 2em;
+    }
+  }
+
+  .hero {
+    width: 100vw;
+    height: fit-content;
+
+    .hero-content {
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-arrow-icon {
+      display: none;
     }
   }
 }
