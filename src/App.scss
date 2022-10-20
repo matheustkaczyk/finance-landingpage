@@ -265,7 +265,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 290px) {
+@media only screen and (max-width: 400px) {
   header {
     width: 100vw;
     height: fit-content;
@@ -293,6 +293,26 @@ header {
       justify-content: space-around;
       align-items: center;
       text-align: center;
+    }
+
+    .hero-arrow-icon {
+      display: none;
+    }
+
+    .hero-image {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 401px) {
+  .hero {
+    height: fit-content;
+    font-size: .8em;
+
+    .hero-content {
+      width: 100%;
+      margin-bottom: unset;
     }
 
     .hero-arrow-icon {
